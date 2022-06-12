@@ -1,0 +1,30 @@
+.Ul-Father{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 46rem;
+}
+
+.li-Alive{
+    display: flex;
+    flex-direction: column;
+    width: 11rem;
+    height: 12rem;
+    background-color: green;
+    align-content: space-between;
+    justify-content: space-around;
+  
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.li-Death{
+    display: flex;
+    flex-direction: column;
+    width: 11rem;
+    height: 12rem;
+    background-color: red;
+    align-content: space-between;
+    justify-content: space-around;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
