@@ -1,6 +1,6 @@
 
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
 import ChardCard from './components/ChardCard';
 import './App.css';
 
