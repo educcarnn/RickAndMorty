@@ -1,3 +1,4 @@
-Esta simples aplicação lista os personagens do Rick and Morty assim que a página for montada. Diferenciando os seus backgrounds de acordo com status de vida.
+Listagem dos personagens do Rick and Morty assim que a página for montada. Diferenciando os seus backgrounds de acordo com status de vida.
 
-Vercel: https://react-api-rick-and-morty.vercel.app/
+
+<a href="https://rick-and-morty-rho-seven.vercel.app/">Site</a>
