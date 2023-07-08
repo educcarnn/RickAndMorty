@@ -9,7 +9,7 @@
 @media(max-width: 800px){
     .Ul-Father{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 50%;
         align-items: flex-start;
@@ -17,8 +17,20 @@
     }
 }
 
+.text-card{
+    text-align: center;
+}
 .title{ 
-    font-size: 2vw;
+    font-size: 5vh;
+    -webkit-text-stroke: 1px green; /* Adicione uma borda de 1 pixel na cor verde */
+    color: white;
+}
+
+.content{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .image{ 
@@ -31,7 +43,7 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
-
+    align-items: center;
     background-color: green;
     width: 100%;
     margin-top: 15%;
