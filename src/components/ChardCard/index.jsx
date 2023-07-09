@@ -9,20 +9,18 @@ function ChardCard() {
   const { characters, currentPage, totalPages, nextPage, previousPage } =
     useCharacterContext()
     
-   
-
   const shouldShowCarousel = useMediaQuery({ maxWidth: 800 });
 
   const itemCard = ({ id, name, status, image }) => {
     return (
       <div key={id} className="carousel-image">
         {status === "Alive" ? (
-          <li className="li-Alive">
+          <li className="li-alive">
             <span className="text-card">{name}</span>
             <img src={image} alt={image} className="image"></img>
           </li>
         ) : (
-          <li className="li-Death">
+          <li className="li-death">
             <span className="text-card">{name}</span>
             <img src={image} alt={image} className="image"></img>
           </li>
