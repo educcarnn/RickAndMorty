@@ -42,7 +42,7 @@ function ChardCard() {
         ) : (
           <ul className="Ul-Father">{characters?.map(itemCard)}</ul>
         )}
-        <div>
+        <div className="button">
           <button onClick={previousPage} disabled={currentPage === 1}>
             Anterior
           </button>

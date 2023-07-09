@@ -1,12 +1,12 @@
 import { CharacterProvider } from "./contexts/RickAndMortyContext";
 import ChardCard from "./components/ChardCard";
-import "./App.css";
+
 
 
 
 function App() {
   return (
-    <div className="App-header">
+    <div >
        
       <CharacterProvider>
         <ChardCard />
