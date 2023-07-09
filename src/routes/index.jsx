@@ -1,4 +1,5 @@
-export default function Home(){
+export default function Routes(){
+
     return(
         <div>
             
