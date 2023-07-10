@@ -6,18 +6,7 @@
   justify-content: center;
   flex-direction: row;
 }
-/*
-@media (max-width: 800px) {
-  .Ul-Father {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    align-items: flex-start;
-    justify-content: center;
-  }
-}
-*/
+
 .text-card {
   text-align: center;
 }
@@ -25,6 +14,7 @@
   font-size: 5vh;
   -webkit-text-stroke: 1px green;
   color: white;
+  cursor: pointer;
 }
 
 .content {

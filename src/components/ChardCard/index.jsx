@@ -1,8 +1,9 @@
 import { useCharacterContext } from "./../../contexts/RickAndMortyContext";
 import ParticleEffect from "../Particles";
-import "./style.css";
+import "./style.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useHistory } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 function ChardCard() {
@@ -10,6 +11,11 @@ function ChardCard() {
     useCharacterContext()
     
   const shouldShowCarousel = useMediaQuery({ maxWidth: 800 });
+
+  let history = useHistory();
+  const handleContent = () => {
+    history.push("/");
+  };
 
   const itemCard = ({ id, name, status, image }) => {
     return (
@@ -32,7 +38,7 @@ function ChardCard() {
   return (
     <>
       <div className="content">
-        <h1 className="title">Rick and Morty</h1>
+        <h1 onClick={handleContent} className="title" >Rick and Morty</h1>
         {shouldShowCarousel ? (
           <Carousel>
             {characters?.map(itemCard)}

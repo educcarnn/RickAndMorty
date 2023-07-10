@@ -1,0 +1,86 @@
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes horizontalFadeIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contentApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.imageContent {
+  width: 400px;
+  height: 350px;
+  animation: floating 3s ease-in-out infinite, horizontalFadeIn 1s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .imageContent {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+.buttonContent {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.textContent {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.my-typewriter {
+  z-index: 1;
+  position: relative;
+  color: white;
+  font-size: 3vh;
+  font-style: italic;
+}
+
+.titleContent {
+  font-size: 5vh;
+  font-weight: bold;
+  -webkit-text-stroke: 1px green;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.copyright{
+  position: relative;
+  z-index: 1;
+}

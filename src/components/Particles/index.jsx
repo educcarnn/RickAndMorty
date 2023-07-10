@@ -22,7 +22,7 @@ function ParticleEffect() {
             options={{
                 background: {
                     color: {
-                        value: "#0000",
+                        value: "#8C6FF7",
                         opacity: 0.5,
                     },
                 },
